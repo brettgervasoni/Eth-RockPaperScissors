@@ -1,3 +1,19 @@
+/*
+ * Solidity Rock, Paper, Scissors Game
+ *
+ * This version uses a random number generator.
+ *
+ * Flow:
+ * 1) Call register with 5 wei, frmo two different addresses (player1, player2)
+ * 2) Call roll
+ * 3) Check lastWinner. 1 = player1, 2 = player2, 0 = house
+ *    Winner doubles their money.
+ *
+ * Based on: https://github.com/SCBuergel/ethereum-rps/blob/master/rps.sol
+ * Note, the random number generator is not so random! Dont use for anything
+ * other than testing
+ */
+
 pragma solidity ^0.4.4;
 
 //not random, but best we can do for testing purposes by the looks of it, 3/18.
